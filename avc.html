@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Workshop</title>
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css">
+  <link rel="shortcut icon" type="x-icon" href="/Images/1.png">
+</head>
+<body>
+  
+  <!-- Header Start -->
+  <div class="header">
+    <div class="headerContainer">
+      <nav class="navbar">
+        <div class="left">
+          <img src="https://30shine.com/static/media/logo_30shine_new.7135aeb8.png" alt="logo" class="items">
+        </div>
+        <div class="middle">
+          <ul>
+            <a href=""><li><span>Trang Chủ</span></li></a>
+            <a href=""><li><span>Về 30Shine</span></li></a>
+            <a href=""><li><span>30Shine Shop</span></li></a>
+            <a href=""><li><span>Tìm 30Shine gần nhất</span></li></a>
+            <a href=""><li><span>Học cắt tóc</span></li></a>
+            <a href=""><li><span>Shine Member</span></li></a>
+          </ul>
+        </div>
+        <div class="right"><button class="loginButton">Đăng Nhập</button></div>
+      </nav>
+    </div>
+  </div>
+  <!-- Header_End -->
+<!-- Image SLider Start-->
+<div class="sliderContainer">
+  <div class="slider">
+   <div class="slides">
+    <!-- radio button start -->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!-- radio button end -->
+    <!-- SLide images start -->
+    <div class="slide first">
+      <img src="https://storage.30shine.com/banner/20231208_banner_kid_w.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://storage.30shine.com/banner/20231211_banner_khaitruong_w.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://storage.30shine.com/banner/20231030_banner_tiktok_w.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="https://storage.30shine.com/banner/20231027_banner_uon_dinh_hinh_1_w.jpg" alt="">
+    </div>
+    <!-- Slide images end -->
+    <!-- auto navi start -->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!-- auto navi end -->
+   </div>
+  <!-- manual navi start -->
+   <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+   </div>
+  <!-- manual navi end -->
+  </div>
+</div>
+<!-- Image Slider End -->
+<script type="text/javascript">
+  var counter =1;
+  setInterval(function(){
+    document.getElementById('radio'+counter).checked=true;counter++;
+    if (counter>4){
+      counter=1;
+    }
+  }
+  ,5000);
+
+</script>
+<div class="formContainer">
+  <div class="form">
+    <div class="formleft">
+      <div class="block"></div>
+      <div class="slogan">
+         <span>ĐẶT LỊCH GIỮ CHỖ CHỈ 30 GIÂY</span>
+      </div>
+      <div class="sloganText">
+        <span>Cắt xong trả tiền, hủy lịch không sao</span>
+      </div>
+    <div class="lastLine">
+      <input type="text" placeholder="Nhập SĐT để đặt lịch">
+      <div class="bookingButton">
+        <div class="bookingText">
+            <span>ĐẶT LỊCH NGAY</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="formRight">
+      <div class="intro">Mời anh đánh giá chất lượng phục vụ</div>
+      <div class="feedback">Phản hồi của anh sẽ giúp chúng em cải thiện chất lượng dịch vụ tốt hơn</div>
+      <div class="ratingContainer">
+        <div class="rating">
+          <input type="radio" name="star" id="star1"><label for="star1"></label>
+          <input type="radio" name="star" id="star2"><label for="star2"></label>
+          <input type="radio" name="star" id="star3"><label for="star3"></label>
+          <input type="radio" name="star" id="star4"><label for="star4"></label>
+          <input type="radio" name="star" id="star5"><label for="star5"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="layoutContainer">
+    <div class="layout" id="layout1">
+      <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">Dịch Vụ Cắt Tóc</div></div>
+      <div class="layoutList1">
+        <div class="borderItem">
+          <div class="item"id="item1">
+            <div class="headImage" ><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_toc_1.png" alt=""></div>
+            <div class="labelService"><span>Cắt</span><span>tóc</span></div>
+            <div class="bottomLine">
+              <div  class="subTitle">Giá Từ 70.000đ</div>
+              <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+            </div>
+          </div>
+         </div>  
+         <div class="borderItem">
+          <div class="item"id="item2">
+              <div class="headImage" ><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_toc_2.png" alt=""></div>
+              <div class="labelService"><span>Uốn</span><span>định</span><span>hình</span></div>
+              <div class="bottomLine">
+                <div  class="subTitle">Giá Từ 348.000đ</div>
+                <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+              </div>
+          </div>
+        </div>
+        <div class="borderItem">
+          <div class="item" id="item3">
+                <div class="headImage"><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_toc_3.png" alt=""></div>
+                <div class="labelService"><span>Thay</span><span>đổi</span><span>màu</span><span>tóc</span></div>
+                <div class="bottomLine">
+                  <div  class="subTitle">Giá từ 199.000đ</div>
+                  <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+          </div>
+        </div>
+       </div> 
+    </div>
+  </div>
+</div>
+<div class="layoutContainer">
+  <div class="layout" id="layout2">
+    <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">SPA & RELAX</div></div>
+    <div class="layoutList1">
+      <div class="seperateContents">
+        <div class="borderItem">
+          <div class="item"id="item1">
+            <div class="headImage" ><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_spa_1.png" alt=""></div>
+            <div class="labelService"><span>Gội</span><span>Massage</span><span>Relax</span></div>
+            <div class="bottomLine">
+              <div  class="subTitle">Giá Từ 135.000đ</div>
+              <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+            </div>
+          </div>
+         </div>  
+         <div class="borderItem">
+          <div class="item"id="item">
+              <div class="headImage" ><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_spa_2.png" alt=""></div>
+              <div class="labelService"><span>Chăm</span><span>sóc</span><span>da</span><span>Spa</span></div>
+              <div class="bottomLine">
+                <div  class="subTitle">Giá Từ 199.000đ</div>
+                <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+              </div>
+          </div>
+        </div>
+        <div class="borderItem">
+          <div class="item" id="item3">
+                <div class="headImage"><img src="https://storage.30shine.com/web/v4/images/pc/pc_home_spa_3.png" alt=""></div>
+                <div class="labelService"><span>Lấy</span><span>ráy</span><span>tai</span><span>êm</span></div>
+                <div class="bottomLine">
+                  <div  class="subTitle">Giá từ 70.000đ</div>
+                  <div class="More">Tìm hiểu thêm <img src="https://30shine.com/static/media/VectorRight.3c56adf3.svg" alt=""></div>
+          </div>
+        </div>
+       </div> 
+    </div>
+  </div>
+</div>
+</div>
+<div class="homeStore">
+  <div class="store">
+    <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">30SHINE SHOP</div></div>
+    <div class="headTitle" id="headTitle1"><div class="headText" id="Note" >Mỹ phẩm nam cao cấp chính hãng</div></div>
+    <div class="mediaBanner">
+      <div class="banner"><img src="https://storage.30shine.com/web/v4/images/banner_shop_pc.jpeg?v=1" alt=""></div>
+    </div>
+  <div class="bigProducts">
+    <div class="products">
+      <div class="product" id="product1"><div><img src="https://static.30shine.com/shop-admin/2023/11/27/30SMMEIF-vn-11134207-7r98o-lof4ti19hbxzac.jpg" alt=""></div><div>Sữa Rửa Mặt Tràm Trà Skin&Dr Tea tree 100g</div></div>
+      <div class="product" id="product2"><div><img src="https://static.30shine.com/shop-admin/2023/11/27/30SA4CIP-c8d56ecd9d23db237eaecf978c733336.jpg" alt=""></div><div>Serum Dưỡng Da Dabo 7in1 Black Force</div></div>
+      <div class="product" id="product3"><div><img src="https://static.30shine.com/shop-admin/2023/08/17/30SWUJ28-image_2.jpg" alt=""></div><div>Sữa Dưỡng Da Grinif All in One Gentleman cho nam</div></div>
+      <div class="product" id="product4"><div><img src="https://static.30shine.com/shop-admin/2023/12/07/30SEL4ND-1.jpg" alt=""></div><div>Sáp vuốt tóc nam Kevin Murphy Rider</div></div>
+      <div class="product" id="product5"><div><img src="https://static.30shine.com/shop-admin/2023/10/04/30S46UYJ-variation_10.jpg" alt=""></div><div>Sáp vuốt tóc Glanze Clay Wax - Giữ nếp vô địch</div></div>
+    </div>
+   </div>
+  </div>
+</div>
+<div class="layoutBlog">
+  <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">Không gian & Công Nghệ</div></div>
+  <div class="headTitle" id="headTitle1"><div class="headText" id="Note" >Trải nghiệm không gian mở</div></div>
+    <div class="layoutBlog1">
+      <div class="layoutBlog1Container">
+          <img src="https://storage.30shine.com/web/v4/images/pc/pc_kgcn_banner.png" alt="">
+          <div class="blueColor"></div>
+          <div class="layoutBlog1TextWrapper">Vượt qua giới hạn của tiệm tóc truyền thống, 30Shine tạo dựng không gian trải nghiệm hoàn toàn mới với trang thiết bị công nghệ hiện đại.</div>
+        </div>
+        <div class="secondLine">
+          <div class="overLine">
+            <div id="secondLine1" class="a">
+              <img src="https://storage.30shine.com/web/v4/images/pc/pc_kgcc_1.jpg" alt="">
+              <div class="blogTitle"><span>Không gian thoáng, mát, sạch</span></div>
+            </div>
+            <div id="secondLine2" class="b">
+              <img src="https://storage.30shine.com/web/v4/images/pc/pc_kgcc_2.png" alt="">
+              <div class="blogTitle"><span>Trang thiết bị hiện đại</span></div>
+            </div>
+            <div id="secondLine3" class="c">
+              <img src="https://storage.30shine.com/web/v4/images/pc/pc_kgcc_3.png" alt="">
+              <div class="blogTitle"><span>Ứng dụng đặt lịch độc quyền</span></div>
+             </div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="Care">
+  <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">Cam kết 30shine Care</div></div>
+  <div class="headTitle" id="headTitle1"><div class="headText" id="Note" >Sự hài lòng của anh là ưu tiên hàng đầu của 30Shine</div></div>
+<div class="ABContainer"> 
+  <div class="Quality">
+    <img src="https://storage.30shine.com/web/v4/images/pc/pc_goi_co_vai_gay_banner.png" alt="">
+    <div class="blueColor"></div>
+    <div class="qualityBanner">
+      <div class="qualityBannerTitle">VÌ CHẤT LƯỢNG PHỤC VỤ LÀ HÀNG ĐẦU</div>
+      <div class="qualityBannerText">Áp dụng tại salon bất kỳ toàn hệ thống 30Shine</div>
+    </div>
+  </div>
+</div>
+<div class="moreIn4">
+ <div class="justify">
+  <div class="in4">
+    <div class="Số">30</div>
+    <div class="day">ngày</div>
+    <div class="warranty">Đổi/trả hành miễn phí</div>
+  </div>
+  <div class="gray"></div>
+  <div class="in4">
+    <div class="Số">07</div>
+    <div class="day">ngày</div>
+    <div class="warranty">Bảo hành tóc miễn phí</div>
+  </div>
+  <div class="gray"></div>
+  <div class="in4">
+    <div class="day">Giảm</div>
+    <div class="Số">20%</div>
+    <div class="warranty">Riêng lần đầu uốn nhuộm</div>
+  </div>
+</div> 
+
+</div>
+</div>
+
+<div class="preFooter">
+  <div class="headTitle" id="headTitle1"><div class="column"></div><div class="headText" id="headText1">Tìm 30shine gần nhất</div></div>
+  <div class="headTitle" id="headTitle1"><div class="headText" id="Note" >Để xe thuận tiện an toàn, bản đồ dẫn đường chi tiết (hàng trăm Salon)</div></div>
+  <div class="preFooterContainer">
+    <div class="imgContainer">
+      <div class="a123" id="radioabc">
+        <input type="radio" class="preFooterRadio">
+        <input type="radio" class="preFooterRadio">
+        <input type="radio" class="preFooterRadio"></div>
+      <div class="preFooterContainerImg"><img src="https://storage.30shine.com/web/v4/images/pc/pc_map_hn.png" alt=""><div class="a123"><div class="preFooterContainerTitle">Hà Nội </div><div class="preFooterContainerText">20+ Salon</div></div></div> 
+      <div class="preFooterContainerImg"><img src="https://storage.30shine.com/web/v4/images/pc/pc_map_hcm.png" alt=""><div class="a123"><div class="preFooterContainerTitle">TP. Hồ Chí Minh</div><div class="preFooterContainerText">50+ Salon</div></div></div>
+      <div class="preFooterContainerImg"><img src="https://storage.30shine.com/web/v4/images/pc/pc_map_dn.png" alt=""><div class="a123"><div class="preFooterContainerTitle">Đà Nẵng </div><div class="preFooterContainerText">2+ Salon</div></div></div>
+      <div class="preFooterContainerImg"><img src="https://storage.30shine.com/web/v4/images/pc/pc_map_other.png" alt=""><div class="a123"><div class="preFooterContainerTitle">Các Thành phố khác</div> <div class="preFooterContainerText">20+ Salon</div></div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footerLayout">
+    <div class="footerLayoutContainer">
+      <div class="footerLayoutText">
+        <div class="footerLayoutTextText">Về chúng tôi</div>
+        <div class="footerLayoutTextText">30Shine Shop</div>
+        <div class="footerLayoutTextText">Tìm 30Shine gần nhất</div>
+        <div class="footerLayoutTextText">Học cắt tóc</div>
+        <div class="footerLayoutTextText">Chính sách bảo mật</div>
+      </div>
+      <div class="footerLayoutTextMiddle">
+        <div class="footerLayoutTextText">Giờ phục vụ: 8h30 - 20h30 (Thứ 2-Chủ Nhật)</div>
+        <div class="footerLayoutTextText">Hotline (1000đ/phút)  : <span> 1900.27.27.03</span></div>
+        <div class="footerLayoutTextText">Liên hệ học nghề tóc  :<span> 0967.86.3030</span></div>
+        <div class="footerLayoutTextText"><span>Liên hệ quảng cáo</span></div>
+      </div>
+      <div class="footerLayoutTextRight">
+        <div class="footerLayoutTextText"><div>Tải ứng dụng 30Shine</div></div>
+        <div class="footerLayoutTextText" id="footerLayoutTextText">
+          <div class="button123456789">
+            <div class="abcdxyz">
+            <img src="https://30shine.com/static/media/footer_googleplay.d7565d43.svg" alt="">
+            <div>Google Play</div>
+            </div>
+          </div>
+          <div class="button123456789">
+            <div class="abcdxyz">
+            <img src="https://30shine.com/static/media/footer_apple.e1893799.svg" alt="">
+            <div>App Store</div>
+            </div>
+          </div>
+        </div>
+        <div class="footerLayoutTextText">Tham gia cộng đồng 2,5 triệu thành viên</div>
+        <div class="footerLayoutTextText" id="footerLayoutTextText1">
+          <div class="button123456789">
+            <div class="abcdxyz">
+            <img src="https://30shine.com/static/media/footer_tiktok.0e2ca318.svg" alt="">
+            <div>600k follow</div>
+          </div>
+          </div>
+          <div class="button123456789">
+            <div class="abcdxyz">
+            <img src="https://30shine.com/static/media/footer_youtube.2cc3c779.svg" alt="">
+            <div>1300k follow</div>
+            </div>
+          </div>
+          <div class="button123456789">
+            <div class="abcdxyz">
+            <img src="https://30shine.com/static/media/footer_facebook.6e62b291.svg" alt="">
+            <div>200k follow</div>
+            </div>
+          </div>
+        </div>
+        <div class="footerLayoutTextText">
+          <div class="last1Haha"> 
+          <img src="https://30shine.com/static/media/footer_congthuongicon.dd646d39.svg" alt="">
+          <img src="https://30shine.com/static/media/footer_dmca.e3096c90.svg" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerr">© 2015 Công Ty Cổ Phần TMDV 30Shine / Địa chỉ: 82 Trần Đại Nghĩa, P. Đồng Tâm, Q. Hai Bà Trưng, HN/ GPĐKKD số 010.7467.693 do Sở KHĐT TP.HN cấp ngày 08/06/2016.</div>
+</div>
+</body>
+</html>
